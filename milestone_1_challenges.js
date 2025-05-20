@@ -102,3 +102,21 @@ console.log(greetUser("anthony", 300));
 console.log(greetUser("anthony", "hello"));
 console.log(greetUser("ducci", "10"));
 console.log(greetUser("ducci", -1));
+
+//Challenge Nine: FizzBuzz
+
+function fizzBuzzCheck(number) {
+  if (number % 3 === 0 && number % 5 === 0) {
+    return "FizzBuzz";
+  } else if (number % 3 === 0) {
+    return "Fizz";
+  } else if (number % 5 === 0) {
+    return "Buzz";
+  } else {
+    return number;
+  }
+}
+console.log(fizzBuzzCheck(3));
+console.log(fizzBuzzCheck(10));
+console.log(fizzBuzzCheck(15));
+console.log(fizzBuzzCheck(7));
