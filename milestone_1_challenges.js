@@ -80,3 +80,25 @@ function calculateBMI(weight, height) {
 }
 console.log(calculateBMI(68, 1.75));
 console.log(calculateBMI(85, 1.8));
+
+//challenge Eight: Greet user According to hour
+
+function greetUser(name, hour) {
+  //convert hour to number
+  const hourInNumber = Number(hour);
+  if (hourInNumber >= 24 || isNaN(hourInNumber) || hourInNumber < 0) {
+    return "Hours should be between 0 and 23, just like a real clock";
+  } else if (hourInNumber >= 5 && hourInNumber < 12) {
+    return `Good morning, ${name}!`;
+  } else if (hourInNumber >= 12 && hourInNumber < 18) {
+    return `Good afternoon, ${name}!`;
+  } else if (hourInNumber >= 18 && hourInNumber < 22) {
+    return `Good evening ${name}!`;
+  } else {
+    return `Good night, ${name}!`;
+  }
+}
+console.log(greetUser("anthony", 300));
+console.log(greetUser("anthony", "hello"));
+console.log(greetUser("ducci", "10"));
+console.log(greetUser("ducci", -1));
