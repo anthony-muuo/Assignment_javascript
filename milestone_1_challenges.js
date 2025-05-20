@@ -120,3 +120,18 @@ console.log(fizzBuzzCheck(3));
 console.log(fizzBuzzCheck(10));
 console.log(fizzBuzzCheck(15));
 console.log(fizzBuzzCheck(7));
+
+// Challenge 10: Perimeter 2
+
+function eitherPerimeterOfCircleOrSquare(l, num) {
+  if (l === "s") {
+    return 4 * num;
+  }
+  if (l === "c") {
+    return 6.28 * num;
+  } else {
+    return `first paramater should either be an s or c to define square or circle`;
+  }
+}
+console.log(eitherPerimeterOfCircleOrSquare("s", 7));
+console.log(eitherPerimeterOfCircleOrSquare("c", 4));
