@@ -14,3 +14,13 @@ function convert(minutes) {
 }
 console.log(convert(5));
 console.log(convert(2));
+
+//Challenge 3: Perimeter of A Rectangle
+
+//perimeter of a rectangle = 2(length * width) or length+width+length+width
+
+function perimeterOfRectangle(length, width) {
+  return 2 * (length + width);
+}
+console.log(perimeterOfRectangle(6, 7));
+console.log(perimeterOfRectangle(20, 10));
