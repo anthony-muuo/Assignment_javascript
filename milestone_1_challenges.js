@@ -46,3 +46,20 @@ function canDrive(name, age) {
 }
 console.log(canDrive("Jane", 22));
 console.log(canDrive("June", 12));
+
+//Challenge 6: Largest Number
+
+function findLargest(a, b, c) {
+  if (a > b && a > c) {
+    return a;
+  } else if (b > a && b > c) {
+    return b;
+  } else if (c > a && c > b) {
+    return c;
+  } else {
+    return a;
+  }
+}
+console.log(findLargest(5, 9, 3));
+console.log(findLargest(10, 10, 10));
+console.log(findLargest(-1, -5, -3));
