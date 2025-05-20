@@ -24,3 +24,15 @@ function perimeterOfRectangle(length, width) {
 }
 console.log(perimeterOfRectangle(6, 7));
 console.log(perimeterOfRectangle(20, 10));
+
+//Challenge 4: Return Boolean if returned number is Negative
+
+function isNegative(number) {
+  if (number < 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isNegative(-23));
+console.log(isNegative(55));
