@@ -135,3 +135,17 @@ function eitherPerimeterOfCircleOrSquare(l, num) {
 }
 console.log(eitherPerimeterOfCircleOrSquare("s", 7));
 console.log(eitherPerimeterOfCircleOrSquare("c", 4));
+
+// challenge 11: sum of even numbers
+
+function sumEvenNumbers(n) {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    if (i % 2 === 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}
+console.log(sumEvenNumbers(6));
+console.log(sumEvenNumbers(10));
