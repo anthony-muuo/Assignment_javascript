@@ -161,3 +161,15 @@ function powerUp(num, times) {
 console.log(powerUp(2, 3));
 console.log(powerUp(5, 0));
 console.log(powerUp(0));
+
+//challenge 13: Factorial Number
+
+function factorial(n) {
+  let startPoint = 1;
+  for (let i = 1; i <= n; i++) {
+    startPoint *= i;
+  }
+  return startPoint;
+}
+
+console.log(factorial(6));
