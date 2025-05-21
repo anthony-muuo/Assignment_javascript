@@ -187,3 +187,16 @@ function sumMultiples(num, divisor) {
 }
 console.log(sumMultiples(10, 2));
 console.log(sumMultiples(15, 3));
+
+//Challenge 15: sum of Digits
+
+function sumDigits(num) {
+  let sum = 0;
+  while (num > 0) {
+    sum += num % 10;
+    num = Math.floor(num / 10);
+  }
+  return sum;
+}
+
+console.log(sumDigits(123));
