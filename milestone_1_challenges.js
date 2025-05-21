@@ -149,3 +149,15 @@ function sumEvenNumbers(n) {
 }
 console.log(sumEvenNumbers(6));
 console.log(sumEvenNumbers(10));
+
+// challenge 12: multiple by itself
+function powerUp(num, times) {
+  let multipleTimes = 1;
+  for (let i = 0; i < times; i++) {
+    multipleTimes *= num;
+  }
+  return multipleTimes;
+}
+console.log(powerUp(2, 3));
+console.log(powerUp(5, 0));
+console.log(powerUp(0));
