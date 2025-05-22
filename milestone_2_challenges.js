@@ -130,4 +130,18 @@ function average(array) {
   return average;
 }
 
-console.log(average([]));
+// console.log(average([]));
+
+// challenge 11: linear search
+
+function linearSearch(array, value) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+console.log(linearSearch([5, 3, 7, 1, 4], 7));
+console.log(linearSearch([5, 3, 7, 1, 4], 10));
