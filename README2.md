@@ -13,7 +13,7 @@ These challenges will help you to solidify your understanding of basic data stru
   - [5. Count Properties](#5-count-properties)
   - [6. Filter by Length](#6-filter-by-length)
   - [7. Sum of Even Numbers](#7-sum-of-even-numbers)
-  - [8. Difference Between Sum of Even and Odd Numbers](#8--difference-between-sum-of-even-and-odd-numbers)
+  - [8. Difference Between Sum of Even and Odd Numbers](#8-difference-between-sum-of-even-and-odd-numbers)
   - [9. Count Truthy](#9-count-truthy)
   - [10. Average of Numbers](#10-average-of-numbers)
   - [11. Linear Search](#11-linear-search)
