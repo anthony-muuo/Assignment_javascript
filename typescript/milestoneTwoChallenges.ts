@@ -150,4 +150,16 @@ function reverseLinearSearch(array: number[], value: number) {
   }
   return -1;
 }
-console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));
+// console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));
+// challenge 13: linear Search All Indexes
+
+function linearSearchAll(array: number[], value: number) {
+  let newLinearArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      newLinearArray.push(i);
+    }
+  }
+  return newLinearArray;
+}
+// console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7));
