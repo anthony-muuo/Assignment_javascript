@@ -18,4 +18,18 @@ function findMax(array) {
     }
     return max;
 }
-console.log(findMax([3, 7, 2, 9, 5]));
+function findWinner(array) {
+    var winner = array[0];
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].votes > winner.votes) {
+            winner = array[i];
+        }
+    }
+    return winner;
+}
+var candidates = [
+    { name: "Alice", votes: 50 },
+    { name: "Bob", votes: 75 },
+    { name: "Charlie", votes: 65 },
+];
+console.log(findWinner(candidates));
