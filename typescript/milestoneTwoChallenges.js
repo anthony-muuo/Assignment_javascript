@@ -96,4 +96,17 @@ function countTruthy(object) {
     }
     return count;
 }
-console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }));
+// console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }));
+// challenge 10: average of numbers
+function average(array) {
+    var sum = 0;
+    for (var i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    if (array.length === 0) {
+        return 0;
+    }
+    var average = sum / array.length;
+    return average;
+}
+console.log(average([1, 2, 3]));
