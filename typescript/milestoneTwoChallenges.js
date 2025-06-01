@@ -109,4 +109,14 @@ function average(array) {
     var average = sum / array.length;
     return average;
 }
-console.log(average([1, 2, 3]));
+// console.log(average([1, 2, 3]));
+// challenge 11: linear search
+function linearSearch(array, value) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] === value) {
+            return i;
+        }
+    }
+    return -1;
+}
+console.log(linearSearch([5, 3, 7, 1, 4], 7));
