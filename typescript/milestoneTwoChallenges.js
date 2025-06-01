@@ -119,4 +119,14 @@ function linearSearch(array, value) {
     }
     return -1;
 }
-console.log(linearSearch([5, 3, 7, 1, 4], 7));
+// console.log(linearSearch([5, 3, 7, 1, 4], 7));
+// challenge 12: reverse linear search
+function reverseLinearSearch(array, value) {
+    for (var i = array.length - 1; i >= 0; i--) {
+        if (array[i] === value) {
+            return i;
+        }
+    }
+    return -1;
+}
+console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7));
