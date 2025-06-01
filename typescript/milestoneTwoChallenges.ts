@@ -163,3 +163,21 @@ function linearSearchAll(array: number[], value: number) {
   return newLinearArray;
 }
 // console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7));
+
+// challenge 14: count occurrence
+
+function countOccurrences(array: string[]) {
+  let obj: { [key: string]: number } = {};
+  for (let i = 0; i < array.length; i++) {
+    if (obj[array[i]]) {
+      obj[array[i]]++;
+    } else {
+      obj[array[i]] = 1;
+    }
+  }
+  return obj;
+}
+
+console.log(
+  countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"])
+);
