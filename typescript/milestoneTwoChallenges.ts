@@ -60,4 +60,15 @@ function findLongestWord(array: string[]) {
 function countProperties(object: Object) {
   return Object.keys(object).length;
 }
-console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }));
+// console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }));
+
+function filterByLength(array: string[], minlength: number) {
+  let newArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].length >= minlength) {
+      newArray.push(array[i]);
+    }
+  }
+  return newArray;
+}
+console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5));
