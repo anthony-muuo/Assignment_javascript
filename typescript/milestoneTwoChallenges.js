@@ -58,4 +58,15 @@ function filterByLength(array, minlength) {
     }
     return newArray;
 }
-console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5));
+// console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5));
+// Challenge 7: sum of even function
+function sumEvenNumbers(array) {
+    var sum = 0;
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] % 2 === 0) {
+            sum += array[i];
+        }
+    }
+    return sum;
+}
+console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]));
