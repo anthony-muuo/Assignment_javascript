@@ -101,4 +101,16 @@ function differenceEvenOdd(array: number[]) {
   let difference = evenNum - oddNum;
   return difference;
 }
-console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));
+// console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));
+// challenge 9: count truthy
+
+function countTruthy(object: { [key: string]: unknown }) {
+  let count = 0;
+  for (let key in object) {
+    if (object[key]) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }));

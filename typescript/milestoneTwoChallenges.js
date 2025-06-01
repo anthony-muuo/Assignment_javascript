@@ -85,4 +85,15 @@ function differenceEvenOdd(array) {
     var difference = evenNum - oddNum;
     return difference;
 }
-console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));
+// console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]));
+// challenge 9: count truthy
+function countTruthy(object) {
+    var count = 0;
+    for (var key in object) {
+        if (object[key]) {
+            count++;
+        }
+    }
+    return count;
+}
+console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }));
