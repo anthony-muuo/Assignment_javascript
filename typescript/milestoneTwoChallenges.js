@@ -154,4 +154,17 @@ function countOccurrences(array) {
     }
     return obj;
 }
-console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]));
+// console.log(
+//   countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"])
+// );
+// challenge 15: remove duplicates
+function removeDuplicates(array) {
+    var newArray = [];
+    for (var i = 0; i < array.length; i++) {
+        if (newArray.indexOf(array[i]) === -1) {
+            newArray.push(array[i]);
+        }
+    }
+    return newArray;
+}
+console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
