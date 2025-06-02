@@ -167,4 +167,25 @@ function removeDuplicates(array) {
     }
     return newArray;
 }
-console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
+// console.log(removeDuplicates([1, 2, 3, 2, 4, 1, 5]));
+// challenge 16: most frequent
+function mostFrequent(array) {
+    var counts = {};
+    var maxCount = 0;
+    var mostFrequentValue = null;
+    for (var i = 0; i < array.length; i++) {
+        var value = array[i];
+        if (counts[value] === undefined) {
+            counts[value] = 0;
+        }
+        else {
+            counts[value]++;
+        }
+        if (counts[value] > maxCount) {
+            maxCount = counts[value];
+            mostFrequentValue = value;
+        }
+    }
+    return mostFrequentValue;
+}
+console.log(mostFrequent(["apple", "banana", "apple", "orange", "banana", "apple"]));
